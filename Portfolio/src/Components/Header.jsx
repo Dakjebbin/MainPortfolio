@@ -8,6 +8,20 @@ const Header = () => {
 
   const [isRotated, setIsRotated] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  const handleScroll = () => {
+    if(window.scrollY > 50) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [scroll])
 
   const mobileNavRef = useRef(null);
 
@@ -35,7 +49,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <header className="bg-[#10031a] sticky right-0 top-0">
+    <header className={!scroll ? "bg-[#10031a] sticky right-0 top-0" : "h-full w-full bg-[#23033b] bg-clip-padding backdrop-filter sticky top-0 backdrop-blur-sm bg-opacity-20 ]"}>
         <nav className="mx-12 flex justify-between items-center">
            <Link to="/">
             <div className="flex items-center">
@@ -43,13 +57,13 @@ const Header = () => {
                 <img className="w-full" src={assets.logo} alt="logo" />
                 </div>
                 <div>
-                <p className="text-white font-Inter text-[18px] flex cursor-pointer font-bold">DakJebbin <span className="lg:block hidden">&nbsp;| FullStack Developer </span></p>
+                <p className="text-white font-Inter text-[18px] flex cursor-pointer font-bold" >DakJebbin <span className="lg:block hidden">&nbsp;| FullStack Developer </span></p>
                 </div>
             </div>
             </Link>
             
            
-            <ul className="text-white text-[18px] cursor-pointer font-Inter flex ">
+            <ul className= "text-white font-Inter text-[18px] flex cursor-pointer">
                 <li className="mr-6 hidden md:flex hover:text-orange-800 duration-300 hover:text-[19px]">
                   <Link to="#home">Home</Link>
                   </li>

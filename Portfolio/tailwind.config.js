@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         Inter: "Inter, serif",
+        anton: "Anton",
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/bg.avif')",
