@@ -49,7 +49,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <header className={!scroll ? "bg-[#10031a] sticky right-0 top-0" : "h-full w-full bg-[#23033b] bg-clip-padding backdrop-filter sticky top-0 backdrop-blur-sm bg-opacity-20 ]"}>
+    <header className={!scroll ? "bg-[#10031a] sticky right-0 top-0" : "h-full w-full bg-[#23033b] bg-clip-padding backdrop-filter sticky z-10 top-0 backdrop-blur-sm bg-opacity-20 ]"}>
         <nav className="mx-12 flex justify-between items-center">
            <Link to="/">
             <div className="flex items-center">
@@ -88,14 +88,14 @@ const Header = () => {
 
         
         <nav ref={mobileNavRef}
-        className={`bg-gradient-to-r from-gray-700 to-gray-900 z-10 min-w-[200px] rounded-xl absolute top-2 right-2 md:hidden 
+        className={`bg-gradient-to-r  from-gray-700 to-gray-900 z-20 min-w-[200px] rounded-xl absolute top-2 right-2 md:hidden 
           ${isMenuOpen ? "opacity-100 block" : "opacity-0 block"} 
           transition-all duration-500 ease-in-out`}
         style={{
           visibility: isMenuOpen ? 'visible' : 'hidden',
           }}
       >
-        <ul className="text-white text-[18px] cursor-pointer font-Inter flex flex-col p-10">
+        <ul className="text-white text-[18px] z-20 cursor-pointer font-Inter flex flex-col p-10">
         <div onClick={toggleRotation} className="md:hidden block">
                   <IoIosCloseCircleOutline onClick={isNavActive} size={30} className={`transition-transform duration-500 ${isRotated ? "rotate-90" : ""}`}/>
                   </div>

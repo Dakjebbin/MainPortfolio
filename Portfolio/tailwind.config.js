@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         Inter: "Inter, serif",
         anton: "Anton",
+        zillaSlab: "Zilla Slab"
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/bg.avif')",
