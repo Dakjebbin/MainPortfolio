@@ -49,7 +49,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <header className={!scroll ? "bg-[#10031a] sticky right-0 top-0" : "w-full bg-[#23033b] bg-clip-padding backdrop-filter fixed z-50 top-0 backdrop-blur-sm bg-opacity-20 ]"}>
+    <header className={scroll ? "w-full bg-[#23033b] fixed top-0 z-50 backdrop-blur-sm bg-opacity-20" : "bg-[#10031a] sticky z-50 top-0"}>
         <nav className="mx-12 flex justify-between items-center">
            <Link to="/">
             <div className="flex items-center">
