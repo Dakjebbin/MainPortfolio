@@ -15,6 +15,16 @@ export default {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/bg.avif')",
       },
+      animation:{
+        'fade-in': 'fadeIn 3s' 
+      },
+
+      keyframes:{
+            fadeIn: {
+              '0%': {opacity:0},
+              '100%': {opacity:1}
+            }
+      }
       
     },
   },

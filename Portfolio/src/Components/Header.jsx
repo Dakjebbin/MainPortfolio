@@ -49,7 +49,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <header className={!scroll ? "bg-[#10031a] sticky right-0 top-0" : "h-full w-full bg-[#23033b] bg-clip-padding backdrop-filter sticky z-10 top-0 backdrop-blur-sm bg-opacity-20 ]"}>
+    <header className={!scroll ? "bg-[#10031a] sticky right-0 top-0" : "w-full bg-[#23033b] bg-clip-padding backdrop-filter fixed z-50 top-0 backdrop-blur-sm bg-opacity-20 ]"}>
         <nav className="mx-12 flex justify-between items-center">
            <Link to="/">
             <div className="flex items-center">
@@ -63,21 +63,21 @@ const Header = () => {
             </Link>
             
            
-            <ul className= "text-white font-Inter text-[18px] flex cursor-pointer">
+            <ul className= "text-white font-Inter  text-[18px] flex cursor-pointer">
                 <li className="mr-6 hidden md:flex hover:text-orange-800 duration-300 hover:text-[19px]">
-                  <Link to="#home">Home</Link>
+                  <a href="#home">Home</a>
                   </li>
                 <li className="mr-6 hidden md:flex hover:text-orange-800 duration-300 hover:text-[19px]">
-                  <Link to="#about">About</Link>
+                  <a href="#about">About</a>
                   </li>
                 <li className="mr-6 hidden md:flex hover:text-orange-800 duration-300 hover:text-[19px]">
-                    <Link to="#work">Work</Link>
+                    <a href="#work">Work</a>
                   </li>
                 <li className="mr-6 hidden md:flex hover:text-orange-800 duration-300 hover:text-[19px]">
-                  <Link to="#testimonial">Testimonial</Link>
+                  <a href="#testimonial">Testimonial</a>
                   </li>
                 <li className="mr-6 hidden md:flex hover:text-orange-800 duration-300 hover:text-[19px]">
-                  <Link to="#contact">Contact</Link>
+                  <a href="#contact">Contact</a>
                   </li>
 
                   <div onClick={toggleRotation} className="md:hidden block">
@@ -88,32 +88,32 @@ const Header = () => {
 
         
         <nav ref={mobileNavRef}
-        className={`bg-gradient-to-r  from-gray-700 to-gray-900 z-20 min-w-[200px] rounded-xl absolute top-2 right-2 md:hidden 
+        className={`bg-gradient-to-r z-50 from-gray-700  to-gray-900 min-w-[200px] rounded-xl absolute top-2 right-2 md:hidden 
           ${isMenuOpen ? "opacity-100 block" : "opacity-0 block"} 
           transition-all duration-500 ease-in-out`}
         style={{
           visibility: isMenuOpen ? 'visible' : 'hidden',
           }}
       >
-        <ul className="text-white text-[18px] z-20 cursor-pointer font-Inter flex flex-col p-10">
-        <div onClick={toggleRotation} className="md:hidden block">
+        <ul className="text-white text-[18px] z-50  cursor-pointer font-Inter flex flex-col p-10">
+        <div onClick={toggleRotation} className="md:hidden block ">
                   <IoIosCloseCircleOutline onClick={isNavActive} size={30} className={`transition-transform duration-500 ${isRotated ? "rotate-90" : ""}`}/>
                   </div>
 
-                <li onClick={isNavActive} className="mb-6 mt-10 hover:text-orange-800 duration-300 hover:text-[19px]">
-                  <Link to="#home">Home</Link>
+                <li onClick={isNavActive} className="mb-6 z-50 mt-10 hover:text-orange-800 duration-300 hover:text-[19px]">
+                  <a href="#home">Home</a>
                   </li>
                 <li onClick={isNavActive} className="mb-6 hover:text-orange-800 duration-300 hover:text-[19px]">
-                  <Link to="#about">About</Link>
+                  <a href="#about">About</a>
                   </li>
                 <li onClick={isNavActive} className="mb-6 hover:text-orange-800 duration-300 hover:text-[19px]">
-                    <Link to="#work">Work</Link>
+                    <a href="#work">Work</a>
                   </li>
                 <li onClick={isNavActive} className="mb-6  hover:text-orange-800 duration-300 hover:text-[19px]">
-                  <Link to="#testimonial">Testimonial</Link>
+                  <a href="#testimonial">Testimonial</a>
                   </li>
                 <li onClick={isNavActive} className="mb-6  hover:text-orange-800 duration-300 hover:text-[19px]">
-                  <Link to="#contact">Contact</Link>
+                  <a href="#contact">Contact</a>
                   </li>
 
             </ul>
