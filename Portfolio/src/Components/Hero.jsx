@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { assets } from "../assets/assets";
 import { motion } from "motion/react"
-
+import { FaDownload } from "react-icons/fa6";
 
 const Hero = () => {
 
@@ -76,21 +76,26 @@ const Hero = () => {
             I still love it as if it was something new.
             </motion.p>  
             <br />
-           <p><strong>Location:</strong> Port Harcourt, Rivers State</p>
+           <motion.p
+           initial={{y: -20, opacity: 0}}
+           whileInView={{y: 0, opacity: 1}}
+           transition={{duration: 0.6, delay:0.3}}
+           ><strong>Location:</strong> Port Harcourt, Rivers State</motion.p>
         
-        <motion.div 
+        <motion.button 
          initial={{y: 30, opacity: 0}}
          whileInView={{y: 0, opacity: 1}}
          transition={{duration: 0.6, delay:1}}
-        className="my-5">
+        className="my-5 px-5 py-3 border-gray-500 border-2 bg-[#ccc8c8] cursor-pointer rounded-full">
            <a
-            className="mt-5 px-10 py-3 bg-[#ccc8c8] text-black font-Inter cursor-pointer border-2 rounded-full border-gray-500"
+            className=" text-black font-semibold font-Inter"
             href="/web cv.pdf" 
             target="_blank"
           >
-            My resume
+         <span className="flex items-center gap-2"> my resume  <FaDownload size={16} className="text-black" /> </span>
           </a>
-          </motion.div>
+          
+          </motion.button>
      
       </div>    
  </div>

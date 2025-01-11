@@ -14,6 +14,7 @@ export default {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/bg.avif')",
+        "main-background": "url('/src/assets/jeremy-perkins-FsK54FVNRfM-unsplash.jpg')"
       },
       animation:{
         'fade-in': 'fadeIn 3s' 
