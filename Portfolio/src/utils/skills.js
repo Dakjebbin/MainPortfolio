@@ -13,7 +13,8 @@ import { BiLogoPostgresql } from "react-icons/bi";
 const skills = [
     {
         name: "Html5",
-        icon: FaHtml5
+        icon: FaHtml5,
+        style: {color: "red"}
     },
     {
         name: "CSS3",

@@ -4,20 +4,18 @@ import { FaLaptopCode } from "react-icons/fa";
 import { MdEngineering } from "react-icons/md";
 import { FaAward } from "react-icons/fa6";
 import { FaServer } from "react-icons/fa";
-import React, { useEffect, useState } from "react";
-import skills from "../utils/skills.js";
+import { FaHtml5 } from "react-icons/fa6";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { FiFigma } from "react-icons/fi";
+import { IoLogoNodejs } from "react-icons/io5";
+import { SiMongodb } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const About = () => {
-
-    const [skill, setSkill] = useState([])
-
-    useEffect(()=> {
-        setSkill(skills)
-    },[skill])
-   
-
-    console.log(skill);
-    
   return (
     <motion.div
     initial={{opacity: 0}}
@@ -104,14 +102,78 @@ const About = () => {
        <div>
         <p className="font-Inter text-center text-2xl text-white font-semibold">My Skills</p>
 
-        <div className="flex flex-wrap">
-        {skill.map((myskill,index) => (
-             (
-                <div key={index} className="flex-grow flex items-center">
-                      {myskill.name} {React.createElement(myskill.icon)}
-                </div>
-            )
-        ))}
+        <div className="flex gap-4 justify-center flex-wrap mt-6">
+        
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2"> 
+                HTML5
+            </p>
+            <FaHtml5 className="text-[20px] text-[#E44D26]"/>
+        </div>
+
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2">
+                Css3
+            </p>
+            <FaCss3Alt className="text-[20px] text-[#5a96c0]"/>
+        </div>
+
+
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2">
+                JavaScript
+            </p>
+            <IoLogoJavascript className="text-[20px] text-[#F7DF1E]"/>
+        </div>
+
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2">
+                Tailwind Css
+            </p>
+            <SiTailwindcss className="text-[20px] text-[#38BDF8]"/>
+        </div>
+
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2">
+                React Js
+            </p>
+            <FaReact className="text-[20px] text-[#61DAFB]"/>
+        </div>
+
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2">
+                NodeJs
+            </p>
+            <IoLogoNodejs className="text-[#8CC84B] text-[20px]"/>
+        </div>
+
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2">
+                Mongodb
+            </p>
+            <SiMongodb className="text-[20px] text-[#47A248]"/>
+        </div>
+
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2">
+                Figma
+            </p>
+            <FiFigma className="text-[20px] text-[#F24E1E]"/>
+        </div>
+
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2">
+                Postgresql
+            </p>
+            <BiLogoPostgresql className="text-[20px] text-[#336791]"/>
+        </div>
+
+        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+            <p className="font-Inter mr-2">
+                Git/Github
+            </p>
+            <FaGithub className="text-[18px] text-[#181717]"/>
+        </div>
         </div>
        </div>
 
