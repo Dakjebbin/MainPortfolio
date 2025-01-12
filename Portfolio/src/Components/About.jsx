@@ -104,14 +104,14 @@ const About = () => {
 
         <div className="flex gap-4 justify-center flex-wrap mt-6">
         
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 hover:-translate-y-1 duration-500 shadow-lg shadow-black py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2"> 
                 HTML5
             </p>
             <FaHtml5 className="text-[20px] text-[#E44D26]"/>
         </div>
 
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Css3
             </p>
@@ -119,60 +119,60 @@ const About = () => {
         </div>
 
 
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 JavaScript
             </p>
             <IoLogoJavascript className="text-[20px] text-[#F7DF1E]"/>
         </div>
 
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Tailwind Css
             </p>
             <SiTailwindcss className="text-[20px] text-[#38BDF8]"/>
         </div>
 
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 React Js
             </p>
             <FaReact className="text-[20px] text-[#61DAFB]"/>
         </div>
 
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 NodeJs
             </p>
             <IoLogoNodejs className="text-[#8CC84B] text-[20px]"/>
         </div>
 
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Mongodb
             </p>
             <SiMongodb className="text-[20px] text-[#47A248]"/>
         </div>
 
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Figma
             </p>
             <FiFigma className="text-[20px] text-[#F24E1E]"/>
         </div>
 
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Postgresql
             </p>
             <BiLogoPostgresql className="text-[20px] text-[#336791]"/>
         </div>
 
-        <div className="basis-40 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <div className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Git/Github
             </p>
-            <FaGithub className="text-[18px] text-[#181717]"/>
+            <FaGithub className="text-[20px] text-[#181717]"/>
         </div>
         </div>
        </div>
