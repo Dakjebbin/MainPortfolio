@@ -9,10 +9,8 @@ const Home = () => {
   return (
     <main className="relative z-0 ">
       <div className="relative bg-hero-pattern bg-cover bg-center w-full h-full">
-        <div className="absolute inset-0 bg-black opacity-50 z-0">
-          
-        </div>
-        <div className="relative z-0">
+     
+        <div className="z-0">
           <Header />
           <Hero />
         </div>
