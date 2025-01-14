@@ -32,15 +32,16 @@ const Testimonial = () => {
                     <div className="basis-72 bg-[#322938] shadow-lg shadow-black hover:-translate-y-2 duration-500 p-5 rounded-lg">
                     <p className="text-[30px] font-anton font-bold">&quot;</p>
                         <p className="font-Inter">
-                        Jebbin is a brilliant web developer with a deep understanding of full-stack technologies. His technical expertise combined with his problem-solving skills made working with him a seamless experience.
+                        I just wrapped up a project with Jebbin, and I’m really impressed! He brought my ideas to life with creativity and professionalism. Communication was top-notch, and he was always open to feedbacks.
+                        I highly recommend working with Jebbin if you want great results..
                     </p>
                     <div className="flex mt-3 justify-between">
                             <div >
                         <p className="font-Inter">
-                            @Victor Alabo
+                            @Ruby Aggo Jr
                         </p>
                         <p className="font-Inter text-[#c7c7c7]">
-                            FullStack Web Developer
+                            Product Designer
                         </p>
                         </div>
 
