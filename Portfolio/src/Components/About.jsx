@@ -102,78 +102,120 @@ const About = () => {
        <div>
         <p className="font-Inter text-center text-2xl text-white font-semibold">My Skills</p>
 
-        <div className="flex gap-4 justify-center flex-wrap mt-6">
+        <div 
+            
+        className="flex gap-4 justify-center flex-wrap mt-6">
         
-        <div className="basis-40 hover:-translate-y-1 duration-500 shadow-lg shadow-black py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div
+         initial={{y: -70, opacity: 0}}
+         whileInView={{y: 0, opacity: 1}}
+         transition={{duration: 0.8, delay:0.5}}
+        className="basis-40 hover:-translate-y-1 duration-500 shadow-lg shadow-black py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2"> 
                 HTML5
             </p>
             <FaHtml5 className="text-[20px] text-[#E44D26]"/>
-        </div>
+        </motion.div>
 
-        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div 
+        initial={{y: -65, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{duration: 0.6, delay:0.5}}
+        className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Css3
             </p>
             <FaCss3Alt className="text-[20px] text-[#5a96c0]"/>
-        </div>
+        </motion.div>
 
 
-        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div 
+         initial={{y: -60, opacity: 0}}
+         whileInView={{y: 0, opacity: 1}}
+         transition={{duration: 0.5, delay:0.5}}
+        className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 JavaScript
             </p>
             <IoLogoJavascript className="text-[20px] text-[#F7DF1E]"/>
-        </div>
+        </motion.div>
 
-        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div
+         initial={{y: -55, opacity: 0}}
+         whileInView={{y: 0, opacity: 1}}
+         transition={{duration: 0.4, delay:0.5}}
+        className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Tailwind Css
             </p>
             <SiTailwindcss className="text-[20px] text-[#38BDF8]"/>
-        </div>
+        </motion.div>
 
-        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div
+         initial={{y: -50, opacity: 0}}
+         whileInView={{y: 0, opacity: 1}}
+         transition={{duration: 0.3, delay:0.5}}
+        className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 React Js
             </p>
             <FaReact className="text-[20px] text-[#61DAFB]"/>
-        </div>
+        </motion.div>
 
-        <div className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div
+         initial={{y: -45, opacity: 0}}
+         whileInView={{y: 0, opacity: 1}}
+         transition={{duration: 0.2, delay:0.5}}
+        className="basis-40 hover:-translate-y-1 shadow-lg shadow-black duration-500 py-2 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 NodeJs
             </p>
             <IoLogoNodejs className="text-[#8CC84B] text-[20px]"/>
-        </div>
+        </motion.div>
 
-        <div className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div
+        initial={{y: -40, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{duration: 0.1, delay:0.5}}
+        className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Mongodb
             </p>
             <SiMongodb className="text-[20px] text-[#47A248]"/>
-        </div>
+        </motion.div>
 
-        <div className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div
+        initial={{y: -35, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{duration: 0.2, delay:0.4}}
+        className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Figma
             </p>
             <FiFigma className="text-[20px] text-[#F24E1E]"/>
-        </div>
+        </motion.div>
 
-        <div className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div 
+        initial={{y: -30, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{duration: 0.2, delay:0.3}}
+        className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Postgresql
             </p>
             <BiLogoPostgresql className="text-[20px] text-[#336791]"/>
-        </div>
+        </motion.div>
 
-        <div className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
+        <motion.div
+        initial={{y: -25, opacity: 0}}
+        whileInView={{y: 0, opacity: 1}}
+        transition={{duration: 0.2, delay:0.2}}
+        className="basis-40 py-2 hover:-translate-y-1 shadow-lg shadow-black duration-500 bg-slate-800 rounded-lg flex items-center justify-center">
             <p className="font-Inter mr-2">
                 Git/Github
             </p>
             <FaGithub className="text-[20px] text-[#181717]"/>
-        </div>
+        </motion.div>
         </div>
        </div>
 

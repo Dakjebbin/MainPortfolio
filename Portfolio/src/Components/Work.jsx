@@ -41,7 +41,7 @@ useEffect(() => {
 },[])
  
   return (
-    <div className='mt-16 m-auto w-[90%]'>
+    <div className='mt-16 m-auto w-[90%]' id='work'>
 
       <h1 className='font-Inter text-white text-2xl font-semibold text-center'>My Latest Work</h1>
       <p className='text-center text-white mt-3 font-Inter text-md'>Welcome to my web development portfolio! Explore a collection of projects showcasing my <br  className='sm:block hidden'/>expertise in full stack web development</p>
@@ -60,11 +60,11 @@ useEffect(() => {
               return (
                 <div key={projectData._id}>
 
-              <div className='w-60  h-60 mb-10 relative'>
-              <img className="w-full h-full object-cover rounded-xl" src={projectData.image} alt="" />
+              <div className='sm:w-60 sm:h-60 mb-10 relative'>
+              <img className="w-full hover:shadow-lg hover:shadow-[silver] duration-500 h-full object-cover rounded-xl" src={projectData.image} alt="" />
 
               <div className='absolute bottom-5 left-1/2 w-10/12 py-3 px-5 -translate-x-1/2 flex flex-col bg-[#e2e2e2] rounded-md hover:-translate-y-2 duration-500'>
-              <p className='font-Inter text-center font-semibold'>{projectData.title}</p>
+              <p className='font-Inter text-center text-lg font-semibold'>{projectData.title}</p>
 
                     <div className='flex justify-between mt-1'>
               <a href={projectData.githubLink} target='_blank'>

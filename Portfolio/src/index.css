@@ -15,10 +15,5 @@
 }
 
 html{
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth ;
 }
-
-/* section{
-  width: 80%;
-  margin: auto;
-} */

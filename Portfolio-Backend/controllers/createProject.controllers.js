@@ -71,6 +71,17 @@ const getProjects = async (req, res) => {
     }
 }
 
+const deleteProject = async (req,res) => {
+        try {
+                const {id} = req.params
+                const project = await createProjectModel.findByIdAndDelete(id).exec();
+        } catch {
+            res.status(500).json({
+                success: false,
+                message: "Internal Server Error"
+            })
+        }
+}
 
 
-export {CreateProject, getProjects}
+export {CreateProject, getProjects, deleteProject}

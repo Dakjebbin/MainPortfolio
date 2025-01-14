@@ -3,6 +3,7 @@ import dotenv from "dotenv"
 import mongoose from "mongoose"
 import cors from "cors";
 import ProjectRoutes from "./routes/Project.routes.js"
+import authRoutes from "./routes/user.routes.js"
 dotenv.config()
 
 const port = process.env.PORT
@@ -17,6 +18,7 @@ app.use(cors({
 }))
 
 app.use("/project", ProjectRoutes)
+app.use("/auth", authRoutes)
 
 
 mongoose.connect(control).then(() => {
