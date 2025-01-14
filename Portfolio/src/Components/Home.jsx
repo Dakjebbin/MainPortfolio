@@ -3,6 +3,7 @@
 import About from './About';
 import Header from './Header';
 import Hero from './Hero';
+import Testimonial from './Testimonial';
 import Work from './Work';
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <div className='bg-gradient-to-br from-[rgb(37,7,59)] to-[#512e68]'>
    <About/> 
       <Work/>
+      <Testimonial/>
       </div>
     </main>
   );
