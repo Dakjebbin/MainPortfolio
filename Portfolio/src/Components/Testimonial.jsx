@@ -4,9 +4,9 @@ import { assets } from "../assets/assets"
 const Testimonial = () => {
   return (
     <section id='testimonial' className='m-auto w-[90%]'>
-            <div className="bg-gradient-to-br p-20 rounded-lg from-[#0d0214] to-[#621194]">
+            <div className="bg-gradient-to-br sm:p-20 p-9 rounded-lg from-[#0d0214] to-[#621194]">
                 <p className="font-Inter text-[#c9c7c7] text-sm">WHAT OTHERS SAY</p>
-                <h1 className="font-Inter text-white font-semibold text-[40px]">Testimonials.</h1>
+                <h1 className="font-Inter text-white font-semibold sm:text-[40px] text-[30px]">Testimonials.</h1>
 
                 <div className="flex text-white gap-5 mt-10 justify-center flex-wrap">
                     <div className="basis-72 bg-[#322938] shadow-lg shadow-black hover:-translate-y-2 duration-500 p-5 rounded-lg">
