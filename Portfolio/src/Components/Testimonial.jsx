@@ -53,20 +53,21 @@ const Testimonial = () => {
                     <div className="basis-72 bg-[#322938] shadow-lg shadow-black hover:-translate-y-2 duration-500 p-5 rounded-lg">
                     <p className="text-[30px] font-anton font-bold">&quot;</p>
                         <p className=" font-Inter">
-                        Jebbin is a standout full-stack developer who goes above and beyond with every project. His versatility across front-end and back-end technologies allows him to tackle complex tasks with ease. Whether working on user interfaces or handling databases and server-side logic.
+                        I have had the pleasure of working with Jebbin, and I can confidently attest to his exceptional web development skills. His dedication, creativity, and attention to detail resulted in a high-quality website that exceeded my expectations. I highly recommend progress for any web development project.
+
                         </p>
                         <div className="flex mt-3 justify-between">
                             <div >
                         <p className="font-Inter">
-                            @Victor Alabo
+                            @Gift Dumale
                         </p>
                         <p className="font-Inter text-[#c7c7c7]">
-                            FullStack Web Developer
+                            FrontEnd Web Developer
                         </p>
                         </div>
 
                         <div className="w-10">
-                            <img className="w-full" src={assets.victor} alt="" />
+                            <img className="w-full" src={assets.gift} alt="" />
                         </div>
                         </div>
                     </div>
